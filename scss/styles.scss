@@ -1,0 +1,615 @@
+body {
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    width: 100%;
+    background-color: #2b2b2b;
+}
+
+@font-face {
+    font-family: 'gothamBook';
+    src: url(../../fonts/Gotham-Book.ttf);
+}
+
+@font-face {
+    font-family: 'gothamBold';
+    src: url(../../fonts/Gotham-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'gothamXLight';
+    src: url(../../fonts/Gotham-XLight.ttf);
+}
+
+@font-face {
+    font-family: 'gothamMedium';
+    src: url(../../fonts/Gotham-Medium.ttf);
+}
+
+.navbar-nav > li > a,
+.navbar-brand {
+    padding-top: 8px !important;
+    padding-bottom: 0 !important;
+}
+
+.navbar {
+    min-height: 75px !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: none !important;
+}
+
+nav.navbar {
+    font-family: 'gothamBook';
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    border-radius: 0px;
+    min-height: 75px;
+    .navbar-header {
+        div.blueFill {
+            min-height: 75px;
+            // width: 8em;
+            width: 25%;
+            background-color: #2996E7;
+            float: left;
+        }
+        .logoAngle {
+            height: 75px;
+            margin-left: -8em;
+            float: left;
+        }
+        button {
+            border: 0;
+            margin: 0;
+            border-radius: 0px;
+            height: 75px;
+            width: 60px;
+        }
+        .navLogoContainer {
+            color: white;
+            position: absolute;
+            line-height: 2.5em;
+            margin-left: 2.5em;
+            margin-top: 0.5em;
+            float: left;
+            img {
+                width: 18em;
+                margin-top: 2em;
+                margin-left: -1em;
+            }
+            p {
+                margin: 1.5em -3em 0em -0.75em;
+                font-size: 1.5em;
+            }
+        }
+        .navbar-toggle .icon-bar {
+            display: block;
+            width: 100%;
+        }
+        .navbar-toggle .icon-bar+.icon-bar {
+            margin-top: 8px;
+        }
+    }
+    div.collapse {
+        border-radius: 0;
+        ul.nav {
+            float: left;
+            margin-right: 4em;
+            li {
+                a {
+                    color: white;
+                    width: 12em;
+                    font-size: 1.125em;
+                }
+                div.searchCircle {
+                    display: none;
+                    border: 1px solid white;
+                    cursor: pointer;
+                    background: url("../../images/search.png") no-repeat center center;
+                    background-size: 12px 12px;
+                    z-index: 500;
+                    position: absolute;
+                    height: 18px;
+                    width: 20px;
+                    margin: -18px 0 0 134px;
+                    img {
+                        height: 1.2em;
+                        margin: 0 auto;
+                        display: block;
+                        margin-top: 0.3em;
+                    }
+                }
+                div#searchCollapse {
+                    position: absolute;
+                    margin-left: -9em;
+                    margin-left: -15em;
+                    margin-top: 3.1em;
+                    input {
+                        padding: 0;
+                        border: 0;
+                        border-radius: 15px;
+                        border: 1px solid white;
+                        text-align: center;
+                    }
+                }
+                form {
+                    input {
+                        width: 15em;
+                        border: 0;
+                        padding: 0;
+                        border-radius: 25px;
+                        height: 20px;
+                        background-color: #CCCCCC;
+                        padding-left: 2em;
+                        margin-left: 1em;
+                        z-index: 1
+                    }
+                }
+            }
+        }
+    }
+    div.navbar-collapse {
+        border: 0;
+        padding-top: 1em;
+    }
+}
+
+section.hero {
+    background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../../images/peopleHero.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: 'gothamBook';
+    min-height: 571px;
+    .heroStatement {
+        font-size: 2.75em;
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+        color: white;
+        margin-top: 7em;
+        p {
+            height: 12em;
+        }
+        span {
+            font-family: 'gothamBold';
+            color: #1D93E9;
+        }
+    }
+    div.logoColor {
+        width: 10%;
+        min-height: 50px;
+        background-color: #2996E7;
+        float: right;
+        margin-right: -15px;
+    }
+    .botAngle {
+        height: 50px;
+        float: right;
+        margin-right: -2em;
+    }
+}
+
+section.people {
+    min-height: 1000px;
+    background-color: white;
+    .teamContainer {
+        height: 1400px;
+        background-color: #FFFFFF;
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            font-family: "gothamBook";
+            color: #2996E7;
+            margin: 2em 0em;
+        }
+        div.firstRow,
+        div.secondRow {
+            width: 100%;
+            height: 660px;
+            margin: 0 auto;
+            .teamBlount {
+                width: 150px;
+                height: 150px;
+                border-radius: 100px;
+                border: 5px solid lightgrey;
+                margin: 0 auto;
+                display: block;
+                cursor: pointer;
+            }
+            .col-sm-4 {
+                p {
+                    font-family: "gothamMedium";
+                    font-size: 16px;
+                    text-align: center;
+                    color: #2996E7;
+                    margin: 1em 0em 2em 0em
+                }
+            }
+        }
+    }
+    .teamPeople {
+        padding-bottom: 4em;
+        margin-top: 5em;
+        .topBorder {
+            width: 80%;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+        .blountInfo,
+        .dicksonInfo,
+        .dundasInfo {
+            padding-top: 3em;
+            div.col-sm-3,
+            div.col-sm-9 {
+                padding: 0;
+            }
+            div.row {
+                margin: 0;
+            }
+            .blountInfoImage {
+                border-radius: 100px;
+                margin: 0 auto;
+                display: block;
+                border: 5px solid lightgrey;
+            }
+            h1 {
+                font-family: "gothamBold";
+                font-size: 24px;
+                text-align: center;
+            }
+            p {
+                span {
+                    border-left: 1px solid #2996E7;
+                    padding-left: 1em;
+                    margin-left: 1em;
+                }
+            }
+            .blountText {
+                font-size: 12px;
+                width: 23em;
+                margin: 0 auto;
+                margin-bottom: 2.5em;
+            }
+            .title {
+                font-family: "gothamBook";
+                color: #2996E7;
+                text-align: center;
+                font-size: 12px;
+            }
+            .peopleMediaLinks {
+                width: 14em;
+                margin: 0 auto;
+                img {
+                    height: 3em;
+                    cursor: pointer;
+                }
+                img:nth-child(2) {
+                    margin: 0em 2em;
+                }
+            }
+        }
+        .blountInfo,
+        .dundasInfo {
+            display: none;
+        }
+    }
+}
+
+footer {
+    background-color: #A8A8A8;
+    min-height: 570px;
+    .footerLogoContainer {
+        width: 19em;
+        margin: 0 auto;
+        padding: 3em 0;
+        img {
+            height: 3em;
+        }
+        p {
+            font-family: 'gothamXLight';
+            padding-top: 1.5em;
+        }
+    }
+    div.row {
+        margin: 0;
+        .col-xs-3 {
+            margin: 0 auto;
+            display: block;
+            width: 100%;
+        }
+        a {
+            display: block;
+            font-family: 'gothamXLight';
+            color: black;
+            line-height: 1.75em;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin: 0 auto;
+        }
+        div.firstFooterCol {
+            a:nth-child(1) {
+                width: 11em;
+            }
+            a:nth-child(2) {
+                width: 7em;
+            }
+            a:nth-child(3) {
+                width: 16em;
+            }
+            a:nth-child(4) {
+                width: 5em;
+            }
+        }
+        div.secondFooterCol {
+            a:nth-child(1),
+            a:nth-child(2),
+            {
+                width: 6em;
+            }
+            a:nth-child(3) {
+                width: 10em;
+            }
+            a:nth-child(4) {
+                width: 4em;
+            }
+        }
+        div.thirdFooterCol {
+            a:nth-child(1) {
+                width: 7em;
+            }
+            a:nth-child(2) {
+                width: 5em;
+            }
+            a:nth-child(3) {
+                width: 8em;
+            }
+            a:nth-child(4) {
+                width: 10em;
+            }
+        }
+        .col-xs-3:nth-child(4) {
+            form {
+                margin: 0 auto;
+                display: block;
+                width: 19em;
+            }
+            input {
+                float: left;
+                border: 0;
+                padding: 0;
+                background-color: #CCCCCC;
+                height: 2.5em;
+                width: 188px;
+                border-radius: 25px;
+                padding-left: 12px;
+                margin-top: 1em;
+            }
+            div.footerSearchIcon {
+                border: 1px solid #525252;
+                border-radius: 25px;
+                height: 25px;
+                width: 25px;
+                cursor: pointer;
+                background: url("../../images/footerSearchIcon.png") no-repeat center center;
+                background-size: 12px 12px;
+                float: left;
+                margin-left: -2.5em;
+                margin-top: 1em;
+            }
+            .footerMediaLinks {
+                margin: 2.5em auto;
+                display: block;
+                width: 12em;
+                img {
+                    height: 3em;
+                    cursor: pointer;
+                }
+                img:nth-child(2) {
+                    margin: 2em 1em;
+                }
+            }
+        }
+    }
+    div.copyright {
+        p {
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    nav.navbar {
+        .navbar-header {
+            width: 34%;
+            display: inline-block;
+            div.blueFill {
+                width: 34%;
+            }
+        }
+        .navbar-collapse.collapse {
+            display: inline-block !important;
+        }
+        div.collapse {
+            float: right;
+            ul.nav {
+                float: right;
+                margin-right: 2em;
+                margin-top: 2em;
+                li {
+                    div.searchCircle {
+                        display: block;
+                        position: relative;
+                        margin: 0.6em 0 0 0;
+                        border-radius: 25px;
+                    }
+                    div#searchCollapse {
+                        input {
+                            width: 158px;
+                            height: 2.25em;
+                        }
+                    }
+                    a {
+                        width: 7.5em;
+                        padding: 0;
+                    }
+                }
+                li:nth-child(4) {
+                    margin-right: 1.8em;
+                }
+            }
+        }
+        div.navbar-collapse {
+            margin-top: -1em;
+        }
+    }
+    section.people {
+        .teamContainer {
+            height: 700px;
+            div.firstRow,
+            div.secondRow {
+                height: 300px;
+            }
+        }
+        .teamPeople {
+            .blountInfo,
+            .dicksonInfo,
+            .dundasInfo {
+                div.row {
+                    width: 70em;
+                    margin: 0 auto;
+                }
+                h1 {
+                    width: 15em;
+                    text-align: left;
+                    margin: 0 auto;
+                }
+                .title {
+                    width: 30em;
+                    text-align: left;
+                    margin: 2em auto;
+                }
+                .blountText {
+                    width: 30em;
+                }
+                .blountInfoImage {
+                    margin-top: 6em;
+                }
+                .peopleMediaLinks {
+                    width: 14em;
+                    margin: 0em 0em 2em 8.25em;
+                }
+            }
+        }
+    }
+    footer {
+        .footerLogoContainer {
+            margin: 0;
+            margin-left: 4em;
+            padding: 7em 0em 10em 0em;
+        }
+        div.row {
+            max-width: 1920px;
+            margin: 0 auto;
+            margin-bottom: 13em;
+            a {
+                text-align: left;
+                width: 11em;
+                margin: 1em 0em;
+                margin-left: 3em;
+            }
+            div.col-xs-3:nth-child(4) {
+                margin: 1em 0 0 -5em;
+            }
+            div.col-xs-3 {
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 975px) {
+    nav.navbar {
+        div.collapse {
+            ul.nav {
+                li {
+                    a {
+                        width: 10em;
+                    }
+                }
+            }
+        }
+    }
+    section.people {
+        .teamPeople {
+            .blountInfo,
+            .dicksonInfo,
+            .dundasInfo {
+                .peopleMediaLinks {
+                    margin: 0em 0em 2em 12em;
+                }
+            }
+        }
+    }
+    footer {
+        div.row {
+            a {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    section.people {
+        .teamPeople {
+            .blountInfo,
+            .dicksonInfo,
+            .dundasInfo {
+                div.row {
+                    width: 80em;
+                    margin: 0 auto;
+                }
+                .blountText {
+                    width: 40em;
+                    margin-left: 10em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    footer {
+        div.row {
+            a {
+                margin-left: 7em;
+            }
+            .firstFooterCol {
+                a:nth-child(3) {
+                    width: 16em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {}
