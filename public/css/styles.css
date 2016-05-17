@@ -29,7 +29,7 @@ body {
   padding-bottom: 0 !important; }
 
 .navbar {
-  min-height: 75px !important; }
+  max-height: 45px !important; }
 
 input:focus,
 select:focus,
@@ -46,24 +46,24 @@ nav.navbar {
   border: 0;
   padding: 0;
   margin: 0;
-  background-color: black;
   border-radius: 0px;
-  min-height: 75px; }
+  min-height: 45px;
+  background: rgba(0, 0, 0, 0.5); }
   nav.navbar .navbar-header div.blueFill {
-    min-height: 75px;
-    width: 25%;
+    min-height: 45px;
+    width: 40%;
     background-color: #2996E7;
     float: left; }
   nav.navbar .navbar-header .logoAngle {
-    height: 75px;
+    height: 45px;
     margin-left: -8em;
     float: left; }
   nav.navbar .navbar-header button {
     border: 0;
     margin: 0;
     border-radius: 0px;
-    height: 75px;
-    width: 60px; }
+    height: 45px;
+    width: 45px; }
   nav.navbar .navbar-header .navLogoContainer {
     color: white;
     position: absolute;
@@ -72,12 +72,12 @@ nav.navbar {
     margin-top: 0.5em;
     float: left; }
     nav.navbar .navbar-header .navLogoContainer img {
-      width: 18em;
-      margin-top: 2em;
+      width: 15em;
+      margin-top: 0.5em;
       margin-left: -1em; }
     nav.navbar .navbar-header .navLogoContainer p {
-      margin: 1.5em -3em 0em -0.75em;
-      font-size: 1.5em; }
+      margin: 1em -3em 0em -0.75em;
+      font-size: 1.15em; }
   nav.navbar .navbar-header .navbar-toggle .icon-bar {
     display: block;
     width: 100%; }
@@ -131,7 +131,8 @@ nav.navbar {
         z-index: 1; }
   nav.navbar div.navbar-collapse {
     border: 0;
-    padding-top: 1em; }
+    padding-top: 1em;
+    background: rgba(0, 0, 0, 0.5); }
 
 section.hero {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../images/peopleHero.png") no-repeat center center fixed;
@@ -141,27 +142,28 @@ section.hero {
   background-size: cover;
   color: white;
   font-family: 'gothamBook';
-  min-height: 571px; }
+  max-height: 350px;
+  background-position-y: -290px; }
   section.hero .heroStatement {
     font-size: 2.75em;
     text-align: center;
     max-width: 100%;
     margin: 0 auto;
     color: white;
-    margin-top: 7em; }
+    margin-top: 5em; }
     section.hero .heroStatement p {
-      height: 12em; }
+      height: 5.5em; }
     section.hero .heroStatement span {
       font-family: 'gothamBold';
       color: #1D93E9; }
   section.hero div.logoColor {
     width: 10%;
-    min-height: 50px;
+    min-height: 45px;
     background-color: #2996E7;
     float: right;
     margin-right: -15px; }
   section.hero .botAngle {
-    height: 50px;
+    height: 45px;
     float: right;
     margin-right: -2em; }
 
@@ -169,14 +171,14 @@ section.people {
   min-height: 1000px;
   background-color: white; }
   section.people .teamContainer {
-    height: 1400px;
+    height: 1490px;
     background-color: #FFFFFF; }
     section.people .teamContainer h1 {
       text-align: center;
       font-size: 24px;
       font-family: "gothamBook";
       color: #2996E7;
-      margin: 2em 0em; }
+      margin: 75px 0em; }
     section.people .teamContainer div.firstRow,
     section.people .teamContainer div.secondRow {
       width: 100%;
@@ -199,76 +201,111 @@ section.people {
         color: #2996E7;
         margin: 1em 0em 2em 0em; }
   section.people .teamPeople {
-    padding-bottom: 4em;
+    padding-bottom: 75px;
     margin-top: 5em; }
-    section.people .teamPeople .topBorder {
-      width: 80%;
-      border: 1px solid black;
-      margin: 0 auto; }
     section.people .teamPeople .blountInfo,
     section.people .teamPeople .dicksonInfo,
-    section.people .teamPeople .dundasInfo {
-      padding-top: 3em; }
+    section.people .teamPeople .dundasInfo,
+    section.people .teamPeople .smithInfo,
+    section.people .teamPeople .vasuInfo,
+    section.people .teamPeople .valerieInfo {
+      padding-top: 75px; }
       section.people .teamPeople .blountInfo div.col-sm-3,
       section.people .teamPeople .blountInfo div.col-sm-9,
       section.people .teamPeople .dicksonInfo div.col-sm-3,
       section.people .teamPeople .dicksonInfo div.col-sm-9,
       section.people .teamPeople .dundasInfo div.col-sm-3,
-      section.people .teamPeople .dundasInfo div.col-sm-9 {
+      section.people .teamPeople .dundasInfo div.col-sm-9,
+      section.people .teamPeople .smithInfo div.col-sm-3,
+      section.people .teamPeople .smithInfo div.col-sm-9,
+      section.people .teamPeople .vasuInfo div.col-sm-3,
+      section.people .teamPeople .vasuInfo div.col-sm-9,
+      section.people .teamPeople .valerieInfo div.col-sm-3,
+      section.people .teamPeople .valerieInfo div.col-sm-9 {
         padding: 0; }
       section.people .teamPeople .blountInfo div.row,
       section.people .teamPeople .dicksonInfo div.row,
-      section.people .teamPeople .dundasInfo div.row {
+      section.people .teamPeople .dundasInfo div.row,
+      section.people .teamPeople .smithInfo div.row,
+      section.people .teamPeople .vasuInfo div.row,
+      section.people .teamPeople .valerieInfo div.row {
         margin: 0; }
       section.people .teamPeople .blountInfo .blountInfoImage,
       section.people .teamPeople .dicksonInfo .blountInfoImage,
-      section.people .teamPeople .dundasInfo .blountInfoImage {
-        border-radius: 100px;
+      section.people .teamPeople .dundasInfo .blountInfoImage,
+      section.people .teamPeople .smithInfo .blountInfoImage,
+      section.people .teamPeople .vasuInfo .blountInfoImage,
+      section.people .teamPeople .valerieInfo .blountInfoImage {
+        border-radius: 150px;
         margin: 0 auto;
         display: block;
         border: 5px solid lightgrey; }
       section.people .teamPeople .blountInfo h1,
       section.people .teamPeople .dicksonInfo h1,
-      section.people .teamPeople .dundasInfo h1 {
+      section.people .teamPeople .dundasInfo h1,
+      section.people .teamPeople .smithInfo h1,
+      section.people .teamPeople .vasuInfo h1,
+      section.people .teamPeople .valerieInfo h1 {
         font-family: "gothamBold";
         font-size: 24px;
         text-align: center; }
       section.people .teamPeople .blountInfo p span,
       section.people .teamPeople .dicksonInfo p span,
-      section.people .teamPeople .dundasInfo p span {
+      section.people .teamPeople .dundasInfo p span,
+      section.people .teamPeople .smithInfo p span,
+      section.people .teamPeople .vasuInfo p span,
+      section.people .teamPeople .valerieInfo p span {
         border-left: 1px solid #2996E7;
         padding-left: 1em;
         margin-left: 1em; }
       section.people .teamPeople .blountInfo .blountText,
       section.people .teamPeople .dicksonInfo .blountText,
-      section.people .teamPeople .dundasInfo .blountText {
+      section.people .teamPeople .dundasInfo .blountText,
+      section.people .teamPeople .smithInfo .blountText,
+      section.people .teamPeople .vasuInfo .blountText,
+      section.people .teamPeople .valerieInfo .blountText {
         font-size: 12px;
         width: 23em;
         margin: 0 auto;
-        margin-bottom: 2.5em; }
+        margin-bottom: 75px; }
       section.people .teamPeople .blountInfo .title,
       section.people .teamPeople .dicksonInfo .title,
-      section.people .teamPeople .dundasInfo .title {
+      section.people .teamPeople .dundasInfo .title,
+      section.people .teamPeople .smithInfo .title,
+      section.people .teamPeople .vasuInfo .title,
+      section.people .teamPeople .valerieInfo .title {
         font-family: "gothamBook";
         color: #2996E7;
         text-align: center;
         font-size: 12px; }
       section.people .teamPeople .blountInfo .peopleMediaLinks,
       section.people .teamPeople .dicksonInfo .peopleMediaLinks,
-      section.people .teamPeople .dundasInfo .peopleMediaLinks {
+      section.people .teamPeople .dundasInfo .peopleMediaLinks,
+      section.people .teamPeople .smithInfo .peopleMediaLinks,
+      section.people .teamPeople .vasuInfo .peopleMediaLinks,
+      section.people .teamPeople .valerieInfo .peopleMediaLinks {
         width: 14em;
         margin: 0 auto; }
         section.people .teamPeople .blountInfo .peopleMediaLinks img,
         section.people .teamPeople .dicksonInfo .peopleMediaLinks img,
-        section.people .teamPeople .dundasInfo .peopleMediaLinks img {
+        section.people .teamPeople .dundasInfo .peopleMediaLinks img,
+        section.people .teamPeople .smithInfo .peopleMediaLinks img,
+        section.people .teamPeople .vasuInfo .peopleMediaLinks img,
+        section.people .teamPeople .valerieInfo .peopleMediaLinks img {
           height: 3em;
           cursor: pointer; }
         section.people .teamPeople .blountInfo .peopleMediaLinks img:nth-child(2),
         section.people .teamPeople .dicksonInfo .peopleMediaLinks img:nth-child(2),
-        section.people .teamPeople .dundasInfo .peopleMediaLinks img:nth-child(2) {
+        section.people .teamPeople .dundasInfo .peopleMediaLinks img:nth-child(2),
+        section.people .teamPeople .smithInfo .peopleMediaLinks img:nth-child(2),
+        section.people .teamPeople .vasuInfo .peopleMediaLinks img:nth-child(2),
+        section.people .teamPeople .valerieInfo .peopleMediaLinks img:nth-child(2) {
           margin: 0em 2em; }
-    section.people .teamPeople .blountInfo,
-    section.people .teamPeople .dundasInfo {
+    section.people .teamPeople .dicksonInfo,
+    section.people .teamPeople .dundasInfo,
+    section.people .teamPeople .vasuInfo,
+    section.people .teamPeople .smithInfo,
+    section.people .teamPeople .valerieInfo {
       display: none; }
 
 footer {
@@ -365,7 +402,9 @@ footer {
     width: 34%;
     display: inline-block; }
     nav.navbar .navbar-header div.blueFill {
-      width: 34%; }
+      width: 70%; }
+    nav.navbar .navbar-header .navLogoContainer {
+      margin-left: 75px; }
   nav.navbar .navbar-collapse.collapse {
     display: inline-block !important; }
   nav.navbar div.collapse {
@@ -388,7 +427,8 @@ footer {
       nav.navbar div.collapse ul.nav li:nth-child(4) {
         margin-right: 1.8em; }
   nav.navbar div.navbar-collapse {
-    margin-top: -1em; }
+    margin-top: -2.5em;
+    background-color: transparent; }
   section.people .teamContainer {
     height: 700px; }
     section.people .teamContainer div.firstRow,
@@ -396,37 +436,55 @@ footer {
       height: 300px; }
   section.people .teamPeople .blountInfo div.row,
   section.people .teamPeople .dicksonInfo div.row,
-  section.people .teamPeople .dundasInfo div.row {
+  section.people .teamPeople .dundasInfo div.row,
+  section.people .teamPeople .smithInfo div.row,
+  section.people .teamPeople .vasuInfo div.row,
+  section.people .teamPeople .valerieInfo div.row {
     width: 70em;
     margin: 0 auto; }
   section.people .teamPeople .blountInfo h1,
   section.people .teamPeople .dicksonInfo h1,
-  section.people .teamPeople .dundasInfo h1 {
+  section.people .teamPeople .dundasInfo h1,
+  section.people .teamPeople .smithInfo h1,
+  section.people .teamPeople .vasuInfo h1,
+  section.people .teamPeople .valerieInfo h1 {
     width: 15em;
     text-align: left;
     margin: 0 auto; }
   section.people .teamPeople .blountInfo .title,
   section.people .teamPeople .dicksonInfo .title,
-  section.people .teamPeople .dundasInfo .title {
+  section.people .teamPeople .dundasInfo .title,
+  section.people .teamPeople .smithInfo .title,
+  section.people .teamPeople .vasuInfo .title,
+  section.people .teamPeople .valerieInfo .title {
     width: 30em;
     text-align: left;
     margin: 2em auto; }
   section.people .teamPeople .blountInfo .blountText,
   section.people .teamPeople .dicksonInfo .blountText,
-  section.people .teamPeople .dundasInfo .blountText {
+  section.people .teamPeople .dundasInfo .blountText,
+  section.people .teamPeople .smithInfo .blountText,
+  section.people .teamPeople .vasuInfo .blountText,
+  section.people .teamPeople .valerieInfo .blountText {
     width: 30em; }
   section.people .teamPeople .blountInfo .blountInfoImage,
   section.people .teamPeople .dicksonInfo .blountInfoImage,
-  section.people .teamPeople .dundasInfo .blountInfoImage {
+  section.people .teamPeople .dundasInfo .blountInfoImage,
+  section.people .teamPeople .smithInfo .blountInfoImage,
+  section.people .teamPeople .vasuInfo .blountInfoImage,
+  section.people .teamPeople .valerieInfo .blountInfoImage {
     margin-top: 6em; }
   section.people .teamPeople .blountInfo .peopleMediaLinks,
   section.people .teamPeople .dicksonInfo .peopleMediaLinks,
-  section.people .teamPeople .dundasInfo .peopleMediaLinks {
+  section.people .teamPeople .dundasInfo .peopleMediaLinks,
+  section.people .teamPeople .smithInfo .peopleMediaLinks,
+  section.people .teamPeople .vasuInfo .peopleMediaLinks,
+  section.people .teamPeople .valerieInfo .peopleMediaLinks {
     width: 14em;
     margin: 0em 0em 2em 8.25em; }
   footer .footerLogoContainer {
     margin: 0;
-    margin-left: 4em;
+    margin-left: 6em;
     padding: 7em 0em 10em 0em; }
   footer div.row {
     max-width: 1920px;
@@ -447,7 +505,10 @@ footer {
     width: 10em; }
   section.people .teamPeople .blountInfo .peopleMediaLinks,
   section.people .teamPeople .dicksonInfo .peopleMediaLinks,
-  section.people .teamPeople .dundasInfo .peopleMediaLinks {
+  section.people .teamPeople .dundasInfo .peopleMediaLinks,
+  section.people .teamPeople .smithInfo .peopleMediaLinks,
+  section.people .teamPeople .vasuInfo .peopleMediaLinks,
+  section.people .teamPeople .valerieInfo .peopleMediaLinks {
     margin: 0em 0em 2em 12em; }
   footer div.row a {
     padding-left: 0; } }
@@ -455,12 +516,18 @@ footer {
 @media only screen and (min-width: 991px) {
   section.people .teamPeople .blountInfo div.row,
   section.people .teamPeople .dicksonInfo div.row,
-  section.people .teamPeople .dundasInfo div.row {
+  section.people .teamPeople .dundasInfo div.row,
+  section.people .teamPeople .smithInfo div.row,
+  section.people .teamPeople .vasuInfo div.row,
+  section.people .teamPeople .valerieInfo div.row {
     width: 80em;
     margin: 0 auto; }
   section.people .teamPeople .blountInfo .blountText,
   section.people .teamPeople .dicksonInfo .blountText,
-  section.people .teamPeople .dundasInfo .blountText {
+  section.people .teamPeople .dundasInfo .blountText,
+  section.people .teamPeople .smithInfo .blountText,
+  section.people .teamPeople .vasuInfo .blountText,
+  section.people .teamPeople .valerieInfo .blountText {
     width: 40em;
     margin-left: 10em; } }
 

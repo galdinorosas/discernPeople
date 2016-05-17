@@ -35,7 +35,7 @@ body {
 }
 
 .navbar {
-    min-height: 75px !important;
+    max-height: 45px !important;
 }
 
 input:focus,
@@ -55,19 +55,18 @@ nav.navbar {
     border: 0;
     padding: 0;
     margin: 0;
-    background-color: black;
     border-radius: 0px;
-    min-height: 75px;
+    min-height: 45px;
+    background: rgba(0, 0, 0, 0.5);
     .navbar-header {
         div.blueFill {
-            min-height: 75px;
-            // width: 8em;
-            width: 25%;
+            min-height: 45px;
+            width: 40%;
             background-color: #2996E7;
             float: left;
         }
         .logoAngle {
-            height: 75px;
+            height: 45px;
             margin-left: -8em;
             float: left;
         }
@@ -75,8 +74,8 @@ nav.navbar {
             border: 0;
             margin: 0;
             border-radius: 0px;
-            height: 75px;
-            width: 60px;
+            height: 45px;
+            width: 45px;
         }
         .navLogoContainer {
             color: white;
@@ -86,13 +85,13 @@ nav.navbar {
             margin-top: 0.5em;
             float: left;
             img {
-                width: 18em;
-                margin-top: 2em;
+                width: 15em;
+                margin-top: 0.5em;
                 margin-left: -1em;
             }
             p {
-                margin: 1.5em -3em 0em -0.75em;
-                font-size: 1.5em;
+                margin: 1em -3em 0em -0.75em;
+                font-size: 1.15em;
             }
         }
         .navbar-toggle .icon-bar {
@@ -164,6 +163,7 @@ nav.navbar {
     div.navbar-collapse {
         border: 0;
         padding-top: 1em;
+        background: rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -175,16 +175,17 @@ section.hero {
     background-size: cover;
     color: white;
     font-family: 'gothamBook';
-    min-height: 571px;
+    max-height: 350px;
+    background-position-y: -290px;
     .heroStatement {
         font-size: 2.75em;
         text-align: center;
         max-width: 100%;
         margin: 0 auto;
         color: white;
-        margin-top: 7em;
+        margin-top: 5em;
         p {
-            height: 12em;
+            height: 5.5em;
         }
         span {
             font-family: 'gothamBold';
@@ -193,13 +194,13 @@ section.hero {
     }
     div.logoColor {
         width: 10%;
-        min-height: 50px;
+        min-height: 45px;
         background-color: #2996E7;
         float: right;
         margin-right: -15px;
     }
     .botAngle {
-        height: 50px;
+        height: 45px;
         float: right;
         margin-right: -2em;
     }
@@ -209,14 +210,14 @@ section.people {
     min-height: 1000px;
     background-color: white;
     .teamContainer {
-        height: 1400px;
+        height: 1490px;
         background-color: #FFFFFF;
         h1 {
             text-align: center;
             font-size: 24px;
             font-family: "gothamBook";
             color: #2996E7;
-            margin: 2em 0em;
+            margin: 75px 0em;
         }
         div.firstRow,
         div.secondRow {
@@ -244,17 +245,15 @@ section.people {
         }
     }
     .teamPeople {
-        padding-bottom: 4em;
+        padding-bottom: 75px;
         margin-top: 5em;
-        .topBorder {
-            width: 80%;
-            border: 1px solid black;
-            margin: 0 auto;
-        }
         .blountInfo,
         .dicksonInfo,
-        .dundasInfo {
-            padding-top: 3em;
+        .dundasInfo,
+        .smithInfo,
+        .vasuInfo,
+        .valerieInfo {
+            padding-top: 75px;
             div.col-sm-3,
             div.col-sm-9 {
                 padding: 0;
@@ -263,7 +262,7 @@ section.people {
                 margin: 0;
             }
             .blountInfoImage {
-                border-radius: 100px;
+                border-radius: 150px;
                 margin: 0 auto;
                 display: block;
                 border: 5px solid lightgrey;
@@ -284,7 +283,7 @@ section.people {
                 font-size: 12px;
                 width: 23em;
                 margin: 0 auto;
-                margin-bottom: 2.5em;
+                margin-bottom: 75px;
             }
             .title {
                 font-family: "gothamBook";
@@ -304,8 +303,11 @@ section.people {
                 }
             }
         }
-        .blountInfo,
-        .dundasInfo {
+        .dicksonInfo,
+        .dundasInfo,
+        .vasuInfo,
+        .smithInfo,
+        .valerieInfo {
             display: none;
         }
     }
@@ -442,7 +444,10 @@ footer {
             width: 34%;
             display: inline-block;
             div.blueFill {
-                width: 34%;
+                width: 70%;
+            }
+            .navLogoContainer {
+                margin-left: 75px;
             }
         }
         .navbar-collapse.collapse {
@@ -478,7 +483,8 @@ footer {
             }
         }
         div.navbar-collapse {
-            margin-top: -1em;
+            margin-top: -2.5em;
+            background-color: transparent;
         }
     }
     section.people {
@@ -492,7 +498,10 @@ footer {
         .teamPeople {
             .blountInfo,
             .dicksonInfo,
-            .dundasInfo {
+            .dundasInfo,
+            .smithInfo,
+            .vasuInfo,
+            .valerieInfo {
                 div.row {
                     width: 70em;
                     margin: 0 auto;
@@ -523,7 +532,7 @@ footer {
     footer {
         .footerLogoContainer {
             margin: 0;
-            margin-left: 4em;
+            margin-left: 6em;
             padding: 7em 0em 10em 0em;
         }
         div.row {
@@ -562,7 +571,10 @@ footer {
         .teamPeople {
             .blountInfo,
             .dicksonInfo,
-            .dundasInfo {
+            .dundasInfo,
+            .smithInfo,
+            .vasuInfo,
+            .valerieInfo {
                 .peopleMediaLinks {
                     margin: 0em 0em 2em 12em;
                 }
@@ -583,7 +595,10 @@ footer {
         .teamPeople {
             .blountInfo,
             .dicksonInfo,
-            .dundasInfo {
+            .dundasInfo,
+            .smithInfo,
+            .vasuInfo,
+            .valerieInfo {
                 div.row {
                     width: 80em;
                     margin: 0 auto;
