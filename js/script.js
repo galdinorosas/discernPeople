@@ -3,7 +3,7 @@ $(document).ready(function() {
     $(".teamBlount").click(function(event) {
         $('html, body').animate({
             scrollTop: $(".scroll").offset().top
-        }, 800);
+        }, 600);
 
         switch (event.currentTarget.className) {
             case "blountLink teamBlount img-rounded":

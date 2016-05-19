@@ -57,7 +57,7 @@ nav.navbar {
     margin: 0;
     border-radius: 0px;
     min-height: 45px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     .navbar-header {
         div.blueFill {
             min-height: 45px;
@@ -163,7 +163,7 @@ nav.navbar {
     div.navbar-collapse {
         border: 0;
         padding-top: 1em;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.7);
     }
 }
 
@@ -192,17 +192,23 @@ section.hero {
             color: #1D93E9;
         }
     }
-    div.logoColor {
-        width: 10%;
-        min-height: 45px;
-        background-color: #2996E7;
-        float: right;
-        margin-right: -15px;
-    }
-    .botAngle {
+    .botHeroBorder {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
         height: 45px;
-        float: right;
-        margin-right: -2em;
+        margin-left: -25px;
+        div.logoColor {
+            width: 10%;
+            min-height: 45px;
+            background-color: #2996E7;
+            float: right;
+            margin-right: -40px;
+        }
+        .botAngle {
+            height: 45px;
+            float: right;
+            margin-right: -2em;
+        }
     }
 }
 
@@ -624,6 +630,9 @@ footer {
                 }
             }
         }
+    }
+    nav.navbar div.collapse ul.nav {
+        margin-right: 75px;
     }
 }
 
