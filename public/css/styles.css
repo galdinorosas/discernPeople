@@ -536,10 +536,12 @@ footer {
     width: 40em;
     margin-left: 10em; } }
 
+@media only screen and (min-width: 1050px) {
+  nav.navbar div.collapse ul.nav {
+    margin-right: 75px; } }
+
 @media only screen and (min-width: 1200px) {
   footer div.row a {
     margin-left: 7em; }
   footer div.row .firstFooterCol a:nth-child(3) {
-    width: 16em; }
-  nav.navbar div.collapse ul.nav {
-    margin-right: 75px; } }
+    width: 16em; } }

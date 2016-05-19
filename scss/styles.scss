@@ -618,6 +618,12 @@ footer {
     }
 }
 
+@media only screen and (min-width: 1050px) {
+    nav.navbar div.collapse ul.nav {
+        margin-right: 75px;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     footer {
         div.row {
@@ -630,9 +636,6 @@ footer {
                 }
             }
         }
-    }
-    nav.navbar div.collapse ul.nav {
-        margin-right: 75px;
     }
 }
 
